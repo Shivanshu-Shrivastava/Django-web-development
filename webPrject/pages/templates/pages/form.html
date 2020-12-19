@@ -1,0 +1,7 @@
+{% extends "pages/base.html" %}
+{% block nav_bottom %}
+<form method="post">{% csrf_token %}
+    {{ form }}
+<input type="submit" value="Submit">
+</form>
+{% endblock %}
